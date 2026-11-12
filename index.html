@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Endorfina Casa Maestra</title><meta name="theme-color" content="#2b1d14">
+<meta name="description" content="Menú, pedidos por WhatsApp, pagos y más.">
+<meta property="og:type" content="website"><meta property="og:title" content="Endorfina Casa Maestra"><meta property="og:description" content="Menú, pedidos por WhatsApp, pagos y más.">
+<meta property="og:image" content="https://edrualmaxfatylu-blip.github.io/endorfina-casa-maestra/portada-casa-maestra.jpg"><meta property="og:url" content="https://edrualmaxfatylu-blip.github.io/endorfina-casa-maestra/"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%98%95%3C/text%3E%3C/svg%3E">
+<style>
+:root{--c:#801838;--c2:#5e1028;--bg:#f7ebec;--card:#fffafa;--ink:#2b1018;--mut:#7a5560;--line:#ecd0d4;--wa:#1f9d4c}
+@media (prefers-color-scheme:dark){:root{--card:#2b1219;--ink:#f7e9ea;--mut:#c4a1a9;--line:#47232d}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+main{max-width:480px;margin:0 auto;padding:0 18px 36px}
+a,button{font:inherit;-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--c);outline-offset:2px}
+.hero{height:210px;margin:0 -18px;background:var(--c) center/cover;border-radius:0 0 30px 30px;box-shadow:inset 0 -60px 50px -30px rgba(94,16,40,.45)}
+.logo{display:grid;place-content:center;width:158px;height:158px;margin:-84px auto 0;border-radius:50%;background:var(--c);border:5px solid #fff;box-shadow:0 10px 26px rgba(0,0,0,.28);color:#fff;text-align:center;font-size:1.75rem;line-height:1.1;position:relative}
+.logo small{display:block;margin-top:3px;font:italic 1rem Georgia,serif;opacity:.92}
+h1{font:700 1.55rem/1.2 Georgia,serif;color:var(--c);text-align:center;margin:18px 0 0}
+.lema{text-align:center;color:var(--mut);margin:6px 0 0}
+.grp{border:1.5px dashed var(--mut);border-radius:26px;padding:4px 14px 8px;margin:24px 0 14px;min-width:0}
+.grp legend{display:flex;align-items:center;gap:8px;padding:0 10px;margin:0 auto;font:700 1.3rem Georgia,serif;color:var(--c)}
+.ic{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.btn{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:58px;border-radius:999px;border:0;margin:8px 0;padding:10px 16px;color:#fff;text-decoration:none;font-weight:600;font-size:1.05rem;text-align:center;line-height:1.25;box-shadow:0 6px 14px rgba(0,0,0,.18);cursor:pointer;width:100%}
+.btn small{font-weight:400;font-size:.85rem;opacity:.92}
+.main{background:var(--c)}.wa{background:var(--wa)}
+.pay{background:var(--card);border:1px solid var(--line);border-radius:18px;margin-bottom:14px;overflow:hidden}
+.pay>button{width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:0;padding:16px;font-weight:600;cursor:pointer;color:var(--ink)}
+.pay .ic{transition:transform .2s}.pay.open .ic{transform:rotate(180deg)}
+.pay .body{display:none;padding:0 16px 8px}.pay.open .body{display:block}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.row span{display:block;font-size:.8rem;color:var(--mut)}.row b{font-weight:600;word-break:break-all}
+.copy{flex:none;border:1px solid var(--c);color:var(--c);background:none;border-radius:10px;padding:7px 12px;font-weight:600;font-size:.85rem;cursor:pointer}
+.copy.ok{background:var(--c);color:#fff}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:10px}
+.tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:106px;border-radius:22px;color:#fff;text-decoration:none;font-weight:600;font-size:.86rem;text-align:center;line-height:1.25;padding:10px 6px;box-shadow:0 6px 14px rgba(0,0,0,.16)}
+.tile .ic{width:30px;height:30px}
+.t1{background:var(--c)}.t2{background:var(--c2)}.t3{background:linear-gradient(45deg,var(--c2),var(--c) 55%,#b8365f)}
+footer{text-align:center;color:var(--mut);font-size:.8rem;margin-top:26px}
+.alt{background:var(--card);color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.demo{display:inline-block;margin-top:10px;padding:3px 12px;border:1px solid var(--mut);color:var(--mut);border-radius:999px;font-size:.78rem;font-weight:600}
+.ticket{position:relative;margin:20px 4px 0;background:var(--card);border-radius:18px;padding:16px 18px;display:flex;align-items:center;gap:16px;box-shadow:0 8px 24px rgba(43,16,24,.14)}
+.ticket::before,.ticket::after{content:"";position:absolute;left:96px;width:20px;height:20px;border-radius:50%;background:var(--bg)}
+.ticket::before{top:-10px}.ticket::after{bottom:-10px}
+.num{width:64px;text-align:center;padding-right:16px;border-right:2px dashed var(--line);margin-right:4px}
+.num b{display:block;font:700 2.4rem/1 Georgia,serif;color:var(--c)}.num span{font-size:.78rem;color:var(--mut)}
+.ticket strong{display:block;font-size:1.05rem}.ticket p{margin:0;font-size:.92rem;color:var(--mut)}
+.ticket select{margin-top:6px;background:transparent;border:1px solid var(--line);border-radius:8px;padding:3px 6px;font-size:.8rem;color:var(--mut)}
+.tabs{display:flex;gap:6px;margin:22px 0 4px;background:var(--card);padding:5px;border-radius:14px;border:1px solid var(--line)}
+.tabs button{flex:1;border:0;background:none;padding:10px 4px;border-radius:10px;font-weight:600;font-size:.95rem;cursor:pointer;color:var(--mut)}
+.tabs button[aria-selected="true"]{background:var(--c);color:#fff}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;margin-top:18px}
+.card h2{font:700 1.4rem Georgia,serif;margin:0}.card .sub{color:var(--mut);margin:6px 0 16px}
+.stars{display:flex;justify-content:space-between;margin:6px 0 4px}.stars button{background:none;border:0;padding:4px;cursor:pointer;width:20%}
+.stars svg{width:100%;max-width:52px;fill:none;stroke:#c08a4e;stroke-width:1.6;stroke-linejoin:round;transition:transform .15s,fill .15s}
+.stars button.on svg{fill:#c08a4e}.stars button:active svg{transform:scale(.88)}
+.label{text-align:center;min-height:1.5em;font-weight:600;color:var(--c);margin:0 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}.chips button{border:1px solid var(--line);background:none;border-radius:999px;padding:8px 14px;cursor:pointer;font-size:.92rem;color:var(--ink)}
+.chips button[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#fff}
+textarea{width:100%;min-height:84px;border:1px solid var(--line);border-radius:14px;background:transparent;color:var(--ink);padding:12px;font:inherit;resize:vertical;margin-bottom:12px}
+.btn[disabled]{opacity:.45;cursor:not-allowed}.thanks{text-align:center}
+/* ---- Mejoras de diseño ---- */
+:root{--sh:0 8px 22px rgba(94,16,40,.16)}
+body{background:radial-gradient(120% 55% at 50% 0,rgba(128,24,56,.09),transparent 62%),var(--bg)}
+.hero{filter:saturate(1.1) contrast(1.04);box-shadow:inset 0 -70px 60px -30px rgba(94,16,40,.55),0 14px 32px -14px rgba(94,16,40,.4)}
+.logo{box-shadow:0 14px 30px rgba(94,16,40,.38),0 0 0 7px rgba(255,255,255,.3);letter-spacing:.02em}
+.logo::after{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.35);border-radius:50%;pointer-events:none}
+h1{text-wrap:balance;letter-spacing:-.01em}
+.grp{background:var(--card);box-shadow:var(--sh)}
+.btn{position:relative;transition:transform .15s,box-shadow .2s,filter .2s}
+.btn:active,.tile:active{transform:scale(.97)}
+.btn:hover,.tile:hover{filter:brightness(1.06)}
+.main{background:linear-gradient(135deg,var(--c),var(--c2) 150%)}
+.wa{background:linear-gradient(135deg,#27b45d,#16883f)}
+.btn.main::before,.btn.wa::before{content:"";position:absolute;left:22px;top:50%;width:26px;height:26px;transform:translateY(-50%);opacity:.95}
+.btn.main::before{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 5v16M9 8h6'/%3E%3C/svg%3E") center/contain no-repeat}
+.btn.wa::before{background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 5h16v11H9l-5 4z'/%3E%3C/svg%3E") center/contain no-repeat}
+.tile{transition:transform .15s,filter .2s;box-shadow:inset 0 1px 0 rgba(255,255,255,.25),0 8px 18px rgba(94,16,40,.2)}
+.pay{box-shadow:0 4px 14px rgba(94,16,40,.08)}
+.tabs button{transition:background .2s,color .2s}
+.chips button{transition:background .15s,color .15s,transform .15s}.chips button:active{transform:scale(.95)}
+.stars button.on svg{animation:pop .3s}
+footer::before{content:"\2615";display:block;font-size:1.3rem;margin-bottom:6px;opacity:.7}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pop{50%{transform:scale(1.22)}}
+.logo,h1,.lema,.ticket,.tabs,#vInicio>*{animation:up .6s cubic-bezier(.2,.7,.2,1) backwards}
+h1{animation-delay:.08s}.lema{animation-delay:.14s}.ticket{animation-delay:.2s}.tabs{animation-delay:.24s}
+#vInicio>:nth-child(1){animation-delay:.28s}#vInicio>:nth-child(2){animation-delay:.36s}#vInicio>:nth-child(3){animation-delay:.44s}
+#vOpina:not([hidden]){animation:up .35s ease backwards}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.vw{position:fixed;inset:0;z-index:20;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+.vh{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.vh b{flex:1;font:700 1.15rem Georgia,serif}.vh button{border:0;background:var(--c);color:#fff;border-radius:999px;padding:8px 18px;font-weight:600;cursor:pointer}
+.vt{display:flex;gap:6px;padding:8px 14px;overflow-x:auto;scrollbar-width:none}.vt button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font-weight:600;font-size:.88rem;cursor:pointer}
+.vt button[aria-selected="true"]{background:var(--c);border-color:var(--c);color:#fff}
+.vn{font-size:.78rem;color:var(--mut);text-align:center;padding:2px 0 6px}
+.vs{flex:1;overflow:auto;-webkit-overflow-scrolling:touch}.vs img{display:block;width:100%;height:auto;min-height:60vh}.vs.z img{width:230%;max-width:none}
+.loy{display:flex;align-items:center;gap:14px;margin:0 0 14px;padding:16px 18px;border-radius:20px;background:linear-gradient(135deg,var(--c),var(--c2));color:#fff;text-decoration:none;box-shadow:var(--sh);transition:transform .15s}
+.loy:active{transform:scale(.98)}.loy .ic{width:30px;height:30px;flex:none}.loy div{flex:1;line-height:1.3}.loy b{display:block;font-size:1.05rem}.loy span{font-size:.86rem;opacity:.88}.loy i{font-style:normal;font-size:1.3rem}
+.t4{background:linear-gradient(135deg,var(--c),var(--c2))}
+.pay .btn.wa::before{display:none}
+/* ---- Paleta Casa Maestra: cacao, crema y oro ---- */
+:root{--ink:#2a1d15;--mut:#7a6656;--line:#e3d6c4;--card:#fffcf7;--gold:#c9a063;--sh:0 8px 22px rgba(43,29,20,.16)}
+@media (prefers-color-scheme:dark){:root{--ink:#f3ebe0;--mut:#b9a693;--line:#3a2c21;--card:#211812}}
+body{background:radial-gradient(120% 55% at 50% 0,rgba(201,160,99,.14),transparent 62%),var(--bg)}
+.hero{box-shadow:inset 0 -70px 60px -30px rgba(43,29,20,.6),0 14px 32px -14px rgba(43,29,20,.45)}
+.logo{border-color:var(--gold);box-shadow:0 14px 30px rgba(43,29,20,.4),0 0 0 7px rgba(201,160,99,.25)}
+.logo::after{border-color:rgba(201,160,99,.55)}
+h1{color:var(--ink);letter-spacing:.01em}
+h1::after{content:"";display:block;width:46px;height:2px;margin:12px auto 0;background:var(--gold);border-radius:2px}
+.grp legend,.grp legend .ic{color:var(--ink)}
+.copy{border-color:var(--c2);color:var(--c2)}.copy.ok{background:var(--c2);color:#fff}
+.t3{background:linear-gradient(135deg,var(--c2),var(--c))}
+@media (prefers-color-scheme:dark){.copy{border-color:var(--gold);color:var(--gold)}h1{color:var(--gold)}}
+</style></head>
+<body>
+<main>
+<header class="hero" id="hero" role="img" aria-label="Portada"></header>
+<div class="logo"><span id="lN"></span><small id="lS"></small></div>
+<h1 id="t"></h1><p class="lema" id="lema"></p>
+<p class="lema" id="hor" style="font-size:.88rem;margin-top:2px"></p>
+<div style="text-align:center"><span class="demo" id="demo" hidden>Versión de demostración</span></div>
+<section class="ticket" id="ticket" hidden><div class="num"><b id="mn"></b><span>mesa</span></div><div><strong id="greet"></strong><p>Pide, paga y cuéntanos cómo va todo desde aquí.</p><select id="mesaSel" hidden aria-label="Cambiar mesa (demo)"></select></div></section>
+<nav class="tabs" id="tabs" role="tablist" hidden><button role="tab" aria-selected="true" data-v="vInicio" id="tabI">Mi mesa</button><button role="tab" aria-selected="false" data-v="vOpina">Opinar</button></nav>
+<section id="vInicio">
+<fieldset class="grp" id="grp"><legend><svg class="ic" viewBox="0 0 24 24"><path d="M4 9h12v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.5 2.5 0 0 1 0 5h-2M3 21h14"/></svg><span id="sec"></span></legend>
+<a class="btn main" id="bMenu" target="_blank" rel="noopener">Ver menú digital</a>
+<a class="btn wa" id="bWa" target="_blank" rel="noopener">Pedir por WhatsApp<small id="waS"></small></a></fieldset>
+<a class="loy" id="loy" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M7 15h4"/></svg><div><b>Tarjeta de lealtad</b><span>Agrégala a tu teléfono. Sin apps, cada visita cuenta.</span></div><i>→</i></a>
+<div class="pay" id="pay" hidden><button aria-expanded="false"><span>Pagar por transferencia</span><svg class="ic" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button><div class="body" id="payB"></div></div>
+<div class="tiles">
+<a class="tile t1" id="tMap" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Ubicación y sucursales</a>
+<a class="tile t2" id="tRes" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" style="fill:#fbbc04;stroke:#fbbc04"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4L2.8 9.5l6.4-.8z"/></svg>Califícanos en Google</a>
+<a class="tile t3" id="tIg" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Síguenos en Instagram</a>
+<a class="tile t4" id="tFb" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H6v4h3v8h4v-8h3l1-4h-4V6.5c0-.3.2-.5.5-.5H15z"/></svg>Síguenos en Facebook</a>
+</div>
+</section>
+<section id="vOpina" hidden>
+<div class="card" id="fbForm"><h2>¿Cómo va tu visita?</h2><p class="sub">Toma 10 segundos. Si algo no está bien, lo resolvemos en tu mesa.</p>
+<div class="stars" id="stars" role="radiogroup" aria-label="Calificación"></div><p class="label" id="lbl" aria-live="polite"></p>
+<div class="chips" id="chips"></div><textarea id="cm" placeholder="¿Algo que quieras contarnos? (opcional)"></textarea>
+<button class="btn main" id="send" disabled style="margin:0">Enviar opinión</button></div>
+<div class="card thanks" id="fbDone" hidden></div>
+</section>
+<a class="btn alt" id="otra" target="_blank" rel="noopener" style="margin-top:14px" hidden></a>
+<footer id="pie"></footer>
+</main>
+<div class="vw" id="vw" hidden><div class="vh"><b>Menú</b><button id="vx">Cerrar</button></div><div class="vt" id="vt" role="tablist"></div><div class="vn">Toca la imagen para acercar</div><div class="vs" id="vs"></div></div>
+<script>
+// ============ CONFIGURACIÓN: lo único que se edita por cliente ============
+const CONFIG={
+ nombre:"Endorfina", subtitulo:"chocolatería y café",
+ titulo:"Endorfina Casa Maestra", lema:"La casa original · Comidas completas",
+ color:"#2b1d14", color2:"#6b4423", fondo:"#f5efe6",          // cacao, chocolate y crema
+ colorOscuro:"#8a5a33", color2Oscuro:"#4a3020", fondoOscuro:"#14100c",   // modo oscuro del teléfono
+ foto:"portada.webp",                    // ruta (foto.webp) o imagen incrustada
+ seccion:"Menú & Pedidos",
+ menu:"",   // cuando llegue el menú: "#menu"
+ menuImagenes:[],   // cuando llegue el menú: [["Desayunos","9 a 13 h","menu-desayunos.webp"],["Comidas","","menu-comidas.webp"]]
+ lealtad:"https://app.luyoa.com/enroll/endorfina",   // tarjeta de lealtad (vacío = oculta)
+ horarioTexto:"",
+ whatsapp:{numero:"", etiqueta:"", mensaje:"Hola, quisiera hacer un pedido:"},
+ pago:{banco:"Banorte", titular:"Claudia Hernandez", cuentaEtiqueta:"CLABE", cuenta:"072180010818090894", alias:"", whatsapp:"525547614263", nota:"En concepto, anota tu nombre. Después de pagar, envía tu comprobante por WhatsApp."},
+ mapa:"https://share.google/FYRO9qNpS21dZIHQG",
+ resena:"https://share.google/FYRO9qNpS21dZIHQG",
+ instagram:"",
+ otraSucursal:{nombre:"Endorfina espresso", url:"https://edrualmaxfatylu-blip.github.io/Endorfinas-cafe/"},   // vacío = oculta
+ facebook:"https://www.facebook.com/share/1TuXLpxRKK/",
+ pie:"© Endorfina Casa Maestra | Portal digital",
+ demo:false,                              // true = muestra "demostración" y selector de mesa; ponlo en false al entregar
+ mesaMax:12,                             // solo para el selector de la demo
+ opiniones:{}    // a este WhatsApp llegan las opiniones de 3 estrellas o menos. Vacío ({}) = oculta Opinar
+};
+// ============================================================================
+(function(){
+var C=CONFIG,$=function(s){return document.querySelector(s)},R=document.documentElement.style;
+var dk=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches;
+document.title=C.titulo;R.setProperty("--c",dk&&C.colorOscuro?C.colorOscuro:C.color);R.setProperty("--c2",dk&&C.color2Oscuro?C.color2Oscuro:(C.color2||C.color));R.setProperty("--bg",dk&&C.fondoOscuro?C.fondoOscuro:C.fondo);
+document.querySelector('meta[name=theme-color]').content=dk&&C.colorOscuro?C.colorOscuro:C.color;
+if(C.foto)$("#hero").style.backgroundImage='url("'+C.foto+'")';
+$("#lN").textContent=C.nombre;$("#lS").textContent=C.subtitulo;
+$("#t").textContent=C.titulo;$("#lema").textContent=C.lema;$("#sec").textContent=C.seccion;$("#pie").textContent=C.pie;
+function L(el,h){if(h)el.href=h;else el.hidden=true}
+L($("#bMenu"),C.menu);
+var w=C.whatsapp;
+if(w&&w.numero){$("#bWa").href="https://wa.me/"+w.numero+"?text="+encodeURIComponent(w.mensaje||"");if(w.etiqueta)$("#waS").textContent="("+w.etiqueta+")"}else $("#bWa").hidden=true;
+if($("#bMenu").hidden&&$("#bWa").hidden)$("#grp").hidden=true;
+L($("#loy"),C.lealtad);var os=C.otraSucursal;if(os&&os.url){var oa=$("#otra");oa.href=os.url;oa.textContent="Visita también "+os.nombre;oa.hidden=false}L($("#tFb"),C.facebook);L($("#tMap"),C.mapa);L($("#tRes"),C.resena);L($("#tIg"),C.instagram);
+var p=C.pago;
+if(p){var rows=[["Banco",p.banco],["Titular",p.titular],[p.cuentaEtiqueta||"Cuenta",p.cuenta,1],["Alias",p.alias,1]],h="",any=0;
+ rows.forEach(function(r){if(!r[1])return;any=1;var d=document.createElement("div");d.className="row";
+  var i=document.createElement("div"),s=document.createElement("span"),b=document.createElement("b");
+  s.textContent=r[0];b.textContent=r[1];i.appendChild(s);i.appendChild(b);d.appendChild(i);
+  if(r[2]){var k=document.createElement("button");k.className="copy";k.textContent="Copiar";k.onclick=function(){copy(r[1],k)};d.appendChild(k)}
+  $("#payB").appendChild(d)});
+ if(any){if(p.nota){var n=document.createElement("p");n.textContent=p.nota;n.style.cssText="margin:10px 0 4px;color:var(--mut);font-size:.88rem";$("#payB").appendChild(n)}
+ var pn=p.whatsapp||(w&&w.numero);if(pn){var a=document.createElement("a");a.className="btn wa";a.target="_blank";a.rel="noopener";a.textContent="Enviar comprobante por WhatsApp";a.href="https://wa.me/"+pn+"?text="+encodeURIComponent("Hola, te envío mi comprobante de transferencia. Mi nombre: ");a.style.margin="6px 0 12px";$("#payB").appendChild(a)}
+ $("#pay").hidden=false}}
+$("#pay>button").onclick=function(){var o=$("#pay").classList.toggle("open");this.setAttribute("aria-expanded",o)};
+function copy(t,k){function ok(){k.textContent="Copiado";k.classList.add("ok");setTimeout(function(){k.textContent="Copiar";k.classList.remove("ok")},1600)}
+ function fb(){var a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy")}catch(e){}a.remove();ok()}
+ if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(ok,fb);else fb()}
+
+// ---- Mesa (viene en el enlace de cada tarjeta: ...#mesa-5) ----
+var mesa=0,hasO=!!(C.opiniones&&C.opiniones.whatsapp);
+function rd(){var m=(location.hash||"").match(/^#mesa-(\d{1,3})$/);mesa=m?+m[1]:(C.demo?5:0)}
+function pm(){
+ $("#ticket").hidden=!mesa;$("#tabs").hidden=!hasO;$("#tabI").textContent=mesa?"Mi mesa":"Inicio";
+ if(mesa){$("#mn").textContent=mesa;var hr=new Date().getHours();$("#greet").textContent=(hr<12?"Buenos días":hr<19?"Buenas tardes":"Buenas noches")+", mesa "+mesa;$("#mesaSel").value=mesa}
+ if(w&&w.numero){$("#bWa").href="https://wa.me/"+w.numero+"?text="+encodeURIComponent((mesa?"Hola, soy de la mesa "+mesa+". ":"")+(w.mensaje||""));$("#bWa").firstChild.nodeValue=mesa?"Pedir desde mi mesa":"Pedir por WhatsApp"}
+}
+if(C.demo){$("#demo").hidden=false;var sl=$("#mesaSel");sl.hidden=false;for(var i=1;i<=(C.mesaMax||12);i++){var o=document.createElement("option");o.value=i;o.textContent="Mesa "+i+" (demo)";sl.appendChild(o)}
+ sl.onchange=function(){mesa=+sl.value;try{history.replaceState(null,"","#mesa-"+mesa)}catch(e){}pm();reset()}}
+rd();pm();window.addEventListener("hashchange",function(){rd();pm()});
+
+// ---- Pestañas ----
+document.querySelectorAll(".tabs button").forEach(function(b){b.onclick=function(){
+ document.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-selected",x===b)});
+ $("#vInicio").hidden=b.dataset.v!=="vInicio";$("#vOpina").hidden=b.dataset.v!=="vOpina"}});
+
+// ---- Opinar: no guarda nada; las quejas llegan por WhatsApp, lo bueno va a Google ----
+var rating=0,tags=[],LB=["","Hay que mejorar","Regular","Bien","Muy bien","Excelente"],TG=["Atención","Rapidez","Sabor","Ambiente","Limpieza","Precio"];
+var STAR='<svg viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2 6.3 20.3l1.2-6.4L2.8 9.5l6.4-.8z"/></svg>';
+for(var s=1;s<=5;s++){var sb=document.createElement("button");sb.innerHTML=STAR;sb.setAttribute("role","radio");sb.setAttribute("aria-label",s+" de 5: "+LB[s]);sb.dataset.v=s;
+ sb.onclick=function(){rating=+this.dataset.v;paintS()};$("#stars").appendChild(sb)}
+function paintS(){document.querySelectorAll("#stars button").forEach(function(b){b.classList.toggle("on",+b.dataset.v<=rating);b.setAttribute("aria-checked",+b.dataset.v===rating)});
+ $("#lbl").textContent=LB[rating];$("#send").disabled=!rating;
+ $("#cm").placeholder=rating&&rating<=3?"Cuéntanos qué pasó para resolverlo ahora":"¿Algo que quieras contarnos? (opcional)"}
+TG.forEach(function(t){var b=document.createElement("button");b.textContent=t;b.setAttribute("aria-pressed","false");
+ b.onclick=function(){var i=tags.indexOf(t);if(i<0)tags.push(t);else tags.splice(i,1);b.setAttribute("aria-pressed",i<0)};$("#chips").appendChild(b)});
+function reset(){rating=0;tags=[];$("#cm").value="";paintS();document.querySelectorAll("#chips button").forEach(function(b){b.setAttribute("aria-pressed","false")});$("#fbForm").hidden=false;$("#fbDone").hidden=true}
+$("#send").onclick=function(){
+ var c=$("#cm").value.trim(),d=$("#fbDone"),h;
+ if(rating>=4){h='<h2>¡Gracias, nos alegra!</h2><p class="sub">Tu opinión nos ayuda mucho. ¿Nos regalas una reseña pública? Toma un minuto.</p>'+(C.resena?'<a class="btn main" href="'+C.resena+'" target="_blank" rel="noopener">Calificarnos en Google</a>':'')+'<button class="btn alt" id="again">Volver</button>'}
+ else{var msg=(mesa?"Hola, soy de la mesa "+mesa+". ":"Hola. ")+"Calificación: "+rating+"/5."+(tags.length?" Tema: "+tags.join(", ")+".":"")+(c?" Comentario: "+c:"");
+  h='<h2>Gracias por decirnos</h2><p class="sub">Lamentamos que no haya sido perfecto. Avisa al equipo y te atendemos ahora mismo.</p><a class="btn wa" href="https://wa.me/'+C.opiniones.whatsapp+'?text='+encodeURIComponent(msg)+'" target="_blank" rel="noopener">Hablar con el encargado<small>WhatsApp</small></a><button class="btn alt" id="again">Volver</button>'}
+ d.innerHTML=h;$("#fbForm").hidden=true;d.hidden=false;
+ $("#again").onclick=function(){reset();document.querySelector('.tabs button[data-v="vInicio"]').click()}};
+paintS();
+
+// ---- Menú en imágenes (carga solo al abrirlo) ----
+var VI=C.menuImagenes||[],vi=0;
+if(C.horarioTexto)$("#hor").textContent=C.horarioTexto;else $("#hor").hidden=true;
+function vshow(i){vi=i;document.querySelectorAll("#vt button").forEach(function(b,j){b.setAttribute("aria-selected",j===i)});var s=$("#vs");s.className="vs";s.textContent="";var im=new Image();im.alt=VI[i][0];im.onerror=function(){s.innerHTML='<p style="padding:28px 20px;text-align:center;color:var(--mut)">No pudimos cargar el menú. Escríbenos por WhatsApp y te lo enviamos.</p>'};im.src=VI[i][2];s.appendChild(im);s.scrollTo(0,0)}
+// El botón "atrás" del teléfono cierra el menú en vez de salir del portal
+function vopen(){if(!$("#vw").hidden)return;$("#vw").hidden=false;document.body.style.overflow="hidden";try{history.pushState({menu:1},"")}catch(e){}vshow(vi)}
+function vhide(){$("#vw").hidden=true;document.body.style.overflow=""}
+function vclose(){if(history.state&&history.state.menu)history.back();else vhide()}
+window.addEventListener("popstate",function(e){if(!$("#vw").hidden&&!(e.state&&e.state.menu))vhide()});
+VI.forEach(function(v,i){var b=document.createElement("button");b.textContent=v[0]+(v[1]?" · "+v[1]:"");b.setAttribute("role","tab");b.onclick=function(){vshow(i)};$("#vt").appendChild(b)});
+$("#bMenu").addEventListener("click",function(e){if(VI.length){e.preventDefault();vopen()}});
+$("#vx").onclick=vclose;$("#vs").onclick=function(){this.classList.toggle("z")};
+document.addEventListener("keydown",function(e){if(e.key==="Escape")vclose()});
+if(location.hash==="#menu"&&VI.length)vopen();
+// ---- Señal débil: guarda una copia para cuando no haya red ----
+if("serviceWorker" in navigator)window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});
+})();
+</script>
+</body></html>
